@@ -12,6 +12,7 @@ namespace MyFirstApp
         public string Nev;
         public string Szarmhely;
         public int Mennyiseg;
+       
 
 
         public Fruit(string aNev,string aSzhely,int aMennyiseg)
@@ -19,8 +20,10 @@ namespace MyFirstApp
             Nev = aNev;
             Szarmhely = aSzhely;
             Mennyiseg = aMennyiseg;
-
+            
         }
+
+       
 
     }
 }

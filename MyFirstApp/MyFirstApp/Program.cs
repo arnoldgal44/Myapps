@@ -16,13 +16,17 @@ namespace MyFirstApp
 
             fruits.Add(new Fruit("Körte","Hungary",50));
             fruits.Add(new Fruit("Banán","Hungary",50));
+            fruits.Add(new Fruit("Szőlő", "Hungary", 50));
 
 
             foreach (var item in fruits )
             {
                 Console.WriteLine("Gyümölcs név: " + item.Nev + " hely: " + item.Szarmhely);
+                
             }
-            
+
+           
+
             Console.ReadKey();
 
 
