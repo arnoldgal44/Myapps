@@ -20,6 +20,12 @@ namespace kpo
             ///Cikklus programfutás, amíg a felhasználó szeretne játszani
             bool moreGame = true;
 
+            string compChoice = "";
+            string playerChoice = "";
+
+            int compScore = 0;
+            int playerScore = 0;
+
             Console.WriteLine("*****Kő/Papír/Olló játék*****");
 
             do
