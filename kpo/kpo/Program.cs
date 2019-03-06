@@ -27,17 +27,34 @@ namespace kpo
             int playerScore = 0;
 
             Console.WriteLine("*****Kő/Papír/Olló játék*****");
-
             do
-            {
-                Console.Write("Akarsz még játszani? i/n");
-                if (Console.ReadKey(true).KeyChar == 'n')
                 {
-                    moreGame = false;
-                }
-            } while (moreGame);
-                
+                Console.WriteLine("Mit választasz? k/p/o");
 
+                switch (Console.ReadKey(true).KeyChar)
+                {
+                    case 'k':
+                        playerChoice = "kő";
+                        break;
+                    case 'p':
+                        playerChoice = "papír";
+                        break;
+                    case 'o':
+                        playerChoice = "olló";
+                        break;
+                        
+
+                }
+
+                    Console.Write("Akarsz még játszani? i/n");
+                    if (Console.ReadKey(true).KeyChar == 'n')
+                    {
+                        moreGame = false;
+                    }
+                } while (moreGame) ;
+
+
+            
             
         }
     }
