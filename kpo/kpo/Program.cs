@@ -61,6 +61,25 @@ namespace kpo
                         compChoice = "olló";
                         break;
                 }
+                if (
+                    (playerChoice == "kő" && compChoice == "papír") ||
+                    (playerChoice == "papír" && compChoice == "olló") ||
+                    (playerChoice == "olló" && compChoice == "kő") 
+                    )
+                {
+                    Console.WriteLine("Számítógép:" + compChoice + "Te: " + playerChoice);
+                    Console.WriteLine("Vesztettél! Állás: Szg: {0} Játékos: {1}", ++compScore, playerScore);
+                }
+                else if (playerChoice == compChoice)
+                {
+                    Console.WriteLine("Számítógép: " + compChoice + "Te: " + playerChoice);
+                    Console.WriteLine("Döntetlen! Állás: Szg: {0} Játékos: {1}", compScore, playerScore);
+                }
+                else
+                {
+                    Console.WriteLine("Számítógép: " + compChoice + "Te: " + playerChoice);
+                    Console.WriteLine("Nyertél! Állás: Szg: {0} Játékos: {1}", compScore, ++playerScore);
+                }
 
                     Console.Write("Akarsz még játszani? i/n");
                     if (Console.ReadKey(true).KeyChar == 'n')
@@ -70,7 +89,8 @@ namespace kpo
                 } while (moreGame) ;
 
 
-            
+            Console.ReadKey();
+           
             
         }
     }
