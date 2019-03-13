@@ -14,11 +14,27 @@ namespace esf
 
         public string Name;
 
-        //Konstruktor 
+        //Konstruktor: Inicializálja az osztály adattagjait
         public Excersise(string aName)
         {
             Name = aName;
         }
+
+
+        public void PrintName()
+        {
+            Console.WriteLine(Name);
+
+        }
+
+        public string getName()
+        {
+            return Name;
+        }
+
+        
+
+        
         
     }
 }
