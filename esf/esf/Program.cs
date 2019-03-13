@@ -11,6 +11,7 @@ namespace esf
         static void Main(string[] args)
         {
             int v = 0;
+            string  s;
             //A létrehozott új típussal inicializálunk egy objektumot
             Excersise ex = new Excersise("Gál Arnold");
 
@@ -72,8 +73,10 @@ namespace esf
 
             }
 
+            s = Console.ReadLine();
             //Beolvas egy karaktert a konzolról
             Console.ReadKey();
+            Console.WriteLine("Beolvasás a konzolról:" + s);
 
            
         }
