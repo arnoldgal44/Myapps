@@ -59,7 +59,36 @@ namespace Animal
     }
     class Dog : Animal
     {
+
+        private List<Dog> Kids;
+
         public Dog(string aName)
+        {
+            Name = aName;
+        }
+
+        internal void Born(int v)
+        {
+            Kids = new List<Dog>();
+            for (int i = 0; i < v; i++)
+            {
+                Kids.Add(new Dog("kutya" + i.ToString()));
+            }
+        }
+        internal void Child()
+        {
+            foreach (var item in Kids)
+            {
+                Console.WriteLine(Name + "'s child name: " + item.Name);
+            }
+        }
+        public Dog()
+        {
+
+        }
+
+        
+            public Dog(string aName)
         {
             Name = aName;
 

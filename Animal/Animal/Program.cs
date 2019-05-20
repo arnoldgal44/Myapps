@@ -14,13 +14,20 @@ namespace Animal
             Dog myDog = new Dog("Buksi");
             myCat.Sleep();
             myCat.Hunt();
+
             myCat.Sound();
+            myDog.Sound();
+
             myCat.Born(4);
             myCat.Child();
 
             myDog.Sleep();
             myDog.Hunt();
-            myDog.Sound();
+
+           
+
+            myDog.Born(4);
+            myDog.Child();
 
             Console.ReadKey();
         }
